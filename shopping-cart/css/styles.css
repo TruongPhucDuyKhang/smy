@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+/* Border line */
+.border-min {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #fff;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.border-full {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* btn all */
+.dropdown-toggle {
+  font-size: 38px !important;
+}
+
+.btn-shadow {
+  padding: 10px 37px;
+}
+
+.dropdown-toggle {
+  padding: 18px 60px 18px 25px;
+}
+
+.btn {
+  background-color: transparent;
+  color: #fff;
+  font-size: 33px;
+  font-family: "Bebas Neue", cursive;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.btn-secondary {
+  padding: 15px 101px;
+  background-color: #2e2e2e;
+}
+
+.btn-success {
+  padding: 27px 170px;
+  background-color: #00b94e;
+}
+
+.btn svg,
+.btn-shadow svg {
+  margin-right: 14px;
+}
+
+/* breadcrumb */
+.breadcrumb li {
+  align-items: flex-end;
+}
+
+.breadcrumb li:first-child {
+  color: #656565;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.breadcrumb li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.breadcrumb li a {
+  position: relative;
+}
+
+.breadcrumb li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+}
+
+.breadcrumb > li + li::before {
+  content: ">";
+  color: #656565;
+  margin: 0 13px 0 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* shopping-cart */
+.shopping-cart h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 84px 0px 28px 0;
+}
+
+.shopping-cart .content p {
+  height: 50px;
+  overflow: hidden;
+  font-size: 16px;
+  margin: 38px 110px 58px 110px;
+}
+
+/* rental-period */
+.rental-period .title-first {
+  font-family: "Bebas Neue", cursive;
+  font-size: 33;
+  font-weight: bold;
+  margin: 51px 275px 28px 275px;
+}
+
+.rental-period .title-child {
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 26px 0px 30px 0px;
+}
+
+.rental-period .date-main {
+  background-color: #696969;
+  height: 100px;
+}
+
+.rental-period .date-main span {
+  font-family: "Bebas Neue", cursive;
+  font-size: 45px;
+}
+
+.rental-period .date-main svg {
+  margin-right: 23px;
+}
+
+.rental-period .date-main .date-child {
+  padding: 26px 0px 21px 0px;
+}
+
+.rental-period .note {
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  text-decoration: underline;
+  margin: 31px 0px 30px 0px;
+}
+
+/* shopping-cart-body */
+.shopping-cart-body {
+  margin: 0px 40px 36px 40px;
+}
+
+.shopping-cart-body .body-shop .title {
+  height: 50px;
+  overflow: hidden;
+  font-family: "Bebas Neue", cursive;
+  font-size: 33px;
+  font-weight: bold;
+  margin: 35px 0px 24px 0px;
+}
+
+.shopping-cart-body .body-shop .price {
+  font-size: 88px;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+}
+
+.shopping-cart-body .body-shop .type-price {
+  margin: 0px 15px 0px 16px;
+}
+
+.shopping-cart-body .body-shop .month {
+  margin-right: 39px;
+}
+
+.shopping-cart-body .body-shop .detail {
+  align-items: baseline;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+}
+
+.shopping-cart-body .body-shop .detail2 {
+  margin: 36px 0px 62px 0px;
+}
+
+.shopping-cart-body .body-shop .detail2 .select-option {
+  margin-right: 130px;
+}
+
+select {
+  width: 200px;
+  background: url("../images/icon-down.svg") no-repeat right #ddd;
+  -webkit-appearance: none;
+  background-position-y: 25px;
+  background-position-x: 150px;
+}
+
+.shopping-cart-body .body-shop .detail-footer {
+  margin: 61px 0px 70px 0px;
+}
+
+/* minimum-rental-period */
+.minimum-rental-period .title {
+  padding: 44px 0px 20px 0px;
+  font-size: 25px;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: underline;
+}
+
+.minimum-rental-period .total-order .total-order-heading {
+  padding: 21px 0px 26px 0px;
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.minimum-rental-period p {
+  margin: 0px 40px;
+  font-size: 16px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.minimum-rental-period .total-order {
+  width: 100%;
+  height: 300px;
+  background-color: #696969;
+  margin: 62px 0px 52px 0px;
+}
+
+.minimum-rental-period .button-order {
+  margin: 70px 0px;
+}
+
+.minimum-rental-period .total-order .detail-total-order {
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.minimum-rental-period .total-order .detail-total-order .price {
+  font-size: 133px;
+  margin-right: 17px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.minimum-rental-period .total-order .detail-total-order .type-price {
+  display: block;
+  font-size: 58px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.minimum-rental-period .total-order .detail-total-order .tax {
+  flex: 100% 0 0;
+  font-size: 18px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.question-order {
+  margin: 70px 110px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.question-order .question-title,
+.question-order .question-content p {
+   margin-bottom: 40px;
+}
+
+.question-order .question-content .question-content-title {
+  margin-bottom: 15px;
+}

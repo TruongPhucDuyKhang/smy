@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <title>Cart</title>
+  </head>
+
+  <body>
+    <div class="row">
+      <ul class="breadcrumb flex">
+        <li class="flex">Top</li>
+        <li>
+          <a href="#">購入画面</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <!-- shopping-cart -->
+      <section class="shopping-cart">
+        <h1 class="title text-center">ショッピングカート</h1>
+        <div class="border-min"></div>
+        <div class="flex content">
+          <p class="text-center">
+            ダミーEコマースなどのゲームコンテンツ・サービスの提供を通じて、ダ
+            ミーEコマースなどのゲームコンテンツ・サービスの提供を通じて、ダ
+            ミーお客様に常に最高のエンタテインメント機器をダミーお届けするよう努めてまいります。
+          </p>
+        </div>
+        <!-- border full line -->
+        <div class="border-full"></div>
+      </section>
+
+      <!-- rental-period -->
+      <section class="rental-period">
+        <h1 class="title-first text-center">レンタル期間</h1>
+        <!-- border min line -->
+        <div class="border-min"></div>
+        <!-- border min line -->
+        <h1 class="title-child text-center">お届け日</h1>
+        <div class="date-main">
+          <div class="date-child flex justify-content-center">
+            <svg width="61" height="49">
+              <image
+                xlink:href="images/icon-date.svg"
+                src="images/icon-date.svg"
+                width="61"
+                height="49"
+              ></image>
+            </svg>
+            <span>5/29</span>
+          </div>
+        </div>
+        <!-- note shopping-cart -->
+        <h2 class="note text-center">14日以降なら、いつでも返却可能</h2>
+      </section>
+
+      <!-- shopping-cart-body -->
+      <section class="shopping-cart-body flex flex-col align-items-center">
+        <svg width="670" height="400">
+          <image
+            xlink:href="images/background.svg"
+            src="images/background.svg"
+            width="670"
+            height="400"
+          ></image>
+        </svg>
+
+        <div class="body-shop">
+          <h1 class="title text-center">
+            [新品] シャープ ウォーターオーブン ヘルシオ AX-RA20 オーブンレンジ
+            30L
+          </h1>
+          <!-- detail 1 -->
+          <div class="detail flex justify-content-center">
+            <span class="price">3,300</span>
+            <span class="type-price">円</span>
+            <span class="month">/ 月額</span>
+            <span class="quantity">✕ &nbsp; 0 0 点</span>
+          </div>
+          <!-- detail 2 -->
+          <div class="detail2 flex justify-content-center">
+            <div class="select-option">
+              <select class="btn btn-shadow dropdown-toggle rounded">
+                <option value="">0 0 0</option>
+              </select>
+            </div>
+            <div class="button-trash">
+              <button class="btn btn-shadow rounded flex align-items-center">
+                <svg width="50" height="62">
+                  <image
+                    xlink:href="images/icon-trash.svg"
+                    src="images/icon-trash.svg"
+                    width="50"
+                    height="62"
+                  ></image>
+                </svg>
+                削除
+              </button>
+            </div>
+          </div>
+          <!-- detail-footer -->
+          <div class="detail-footer flex justify-content-center">
+            <button
+              class="btn btn-secondary rounded-full flex align-items-center"
+            >
+              <svg width="50" height="62">
+                <image
+                  xlink:href="images/icon-trash.svg"
+                  src="images/icon-trash.svg"
+                  width="50"
+                  height="62"
+                ></image>
+              </svg>
+              カートを空にする
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- border full line -->
+      <div class="border-full"></div>
+
+      <!-- minimum-rental-period -->
+      <section class="minimum-rental-period">
+        <h2 class="title text-center">最低レンタル期間は14日です</h2>
+        <p>
+          この規約（以下「本規約」といいます。）は、レンティオ株式会社（以下「当社」といいます。）が提供するサービス「Rentio」（以下「本サービス」といいます。）の利用に関する条件を定めるものであり、本サービスを利用するすべてのお客様（以下「ユーザー」といいます。）に適用されます。
+        </p>
+        <div class="total-order text-center">
+          <h2 class="total-order-heading">注文合計・税込</h2>
+          <!-- border min line -->
+          <div class="border-min"></div>
+          <div class="detail-total-order flex justify-content-center">
+            <span class="price">3,300</span>
+            <span class="type-price">円</span>
+            <span class="tax">往復送料込み</span>
+          </div>
+        </div>
+        <div class="button-order text-center">
+          <button class="btn btn-success rounded-full">¥ レジに進む</button>
+        </div>
+      </section>
+      <!-- border full line -->
+      <div class="border-full"></div>
+
+      <!-- question-order -->
+      <section class="question-order">
+        <h1 class="question-title">注文に関するよくあるご質問</h2>
+        <div class="question-content">
+          <h2 class="question-content-title">何時までに注文すれば良いですか?</h2>
+          <p>17時までのご注文完了で当日出荷も可能です。 最短翌日に受け 取ることができます。 (北海道、九州は翌々日)</p>
+        </div>
+        <!-- end question 1 -->
+        <div class="question-content">
+          <h2 class="question-content-title">お届け時間指定は可能ですか?</h2>
+          <p>午前中~21時まで指定できます。 レジに進んだ後、 「配送日時 の選択」 の 「お届け日」欄で指定します。 お受取りの都合があ わない場合はお仕事先などを配送場所にすることもできます。 *ご希望の日時指定で配送業者にお預けしますが、 万が一の交通状況や荒天に よる遅延の際はご容赦ください。</p>
+        </div>
+        <!-- end question 2 -->
+        <div class="question-content">
+          <h2 class="question-content-title">領収書の発行は可能ですか?</h2>
+          <p>アカウント登録して注文した場合、 注文履歴ページで発行でき ます。ただしお支払い方法によって発行できない場合がありま す。 詳しく見る</p>
+        </div>
+        <!-- end question 3 -->
+        <div class="question-content">
+          <h2 class="question-content-title">コンビニ受取は可能ですか?</h2>
+          <p>伝票番号よりご自身でお手続きいただいております。 コメンバーズ要登録) 詳しく見る</p>
+        </div>
+        <!-- end question 4 -->
+        <div class="question-content">
+          <h2 class="question-content-title">返送日にレンティオに商品が届かないといけませんか?</h2>
+          <p>いいえ、返送日=必着日ではありません。 当日の24時までに発 送を済ませて商品がお手元から離れれば大丈夫です。 到着日も 指定しなくて大丈夫です。</p>
+        </div>
+        <!-- end question 5 -->
+      </section>
+    </div>
+  </body>
+</html>
