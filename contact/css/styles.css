@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Border line */
+.border-min {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #fff;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.btn {
+  width: 100%;
+  line-height: 60px;
+  color: #fff;
+  font-size: 33px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  padding: 10px 50px;
+  background-color: #696969;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .heading {
+  margin: 84px 0 26px 0;
+}
+
+.wrapper .content {
+  padding: 46px 64px;
+}
+
+.wrapper .background-image {
+  width: 100%;
+}
+
+.wrapper .heading h1 {
+  font-size: 46px;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .background-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.wrapper .content p {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* section-article */
+.section-article .article .article-header {
+  margin-top: 47px;
+}
+
+.section-article .article .article-header h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+}
+
+.section-article .article .article-title {
+  margin: 30px 0;
+}
+
+.section-article .article .article-title h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #acacac;
+  font-family: "Bebas Neue", cursive;
+}
+
+.section-article .article .article-note {
+  font-size: 17px;
+  color: #acacac;
+  margin-top: 22px;
+  margin-bottom: 55px;
+}
+
+@media (min-width: 320px) and (max-width: 580px) {
+  .row {
+    padding: 0 15px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 0px 50px;
+  }
+
+  .section-article .article .article-header h2 {
+    font-size: 22px;
+  }
+
+  .section-article .article .article-note {
+    font-size: 13px;
+  }
+}
