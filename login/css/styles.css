@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.row {
+  padding: 0px 105px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+/* Border line */
+.border-min {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #fff;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.border-full {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* form-control-input */
+.form-control {
+  border: 1px solid #515151;
+  padding: 10px 70px 10px 30px;
+  color: #fff;
+  margin-bottom: 0;
+  background-color: transparent;
+  width: 100%;
+  position: relative;
+  height: 50px;
+  font-size: 24px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #515151;
+  box-shadow: 0 0 0 0.1rem rgb(73 64 64);
+}
+
+/* btn */
+.btn {
+  height: 60px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 60px;
+  cursor: pointer;
+  border-style: none;
+  width: 100%;
+}
+
+.btn-submit {
+  font-family: "Bebas Neue", cursive;
+}
+.btn-twitter,
+.btn-facebook,
+.btn-google,
+.btn-line,
+.btn-eye {
+  color: #fff;
+}
+
+.btn-twitter {
+  background-color: #5da0ec;
+}
+.btn-facebook {
+  background-color: #435798;
+}
+.btn-google {
+  background-color: #df5423;
+}
+.btn-line {
+  background-color: #81c737;
+}
+
+.btn-eye {
+  cursor: pointer;
+}
+
+/* custom icon styles */
+.fa-twitter {
+  color: #5da0ec;
+}
+
+.fa-facebook-square {
+  color: #435798;
+}
+
+.fa-line {
+  color: #81c737;
+}
+
+/* main content */
+.main-content .main-header-title {
+  font-size: 46px;
+  font-weight: bold;
+  margin: 84px 0 26px 0;
+  font-family: "Bebas Neue", cursive;
+}
+
+.main-content .main-note {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 46px 85px;
+}
+
+.main-content .main-input-group .forgot-password {
+  margin: 15px 0px 20px 0;
+}
+
+.main-content .main-input-group .forgot-password p,
+.main-content .regist-col p {
+  font-size: 20px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.main-content .regist-col p {
+  margin-bottom: 30px;
+}
+
+/* main-footer */
+.main-footer .main-footer-header {
+  font-size: 30px;
+  margin: 40px 0 40px 0;
+  font-family: "Bebas Neue", cursive;
+}
+
+.icon-common {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 40px 0 0;
+  margin-right: 10px;
+}
+
+.icon-google {
+  width: 25px;
+  height: 25px;
+  padding: 5px 7px;
+  margin-right: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.main-footer .main-footer-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main-password */
+.main-password {
+  position: relative;
+}
+
+.password-container {
+  position: relative;
+}
+
+.show-password,
+.hide-password {
+  color: #929292;
+  font-size: 20px;
+}
+
+.show-password {
+  display: block;
+}
+
+.hide-password {
+  display: none;
+}
+
+.input-group.text-center {
+  display: flex;
+  position: relative;
+}
+
+.btn-eye {
+  position: absolute;
+  right: 0;
+  transform: translate(-20px, -50%);
+  top: 50%;
+}
+
+.input-group.text-center:not(.main-password) input {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 580px) {
+  .row {
+    padding: 0 15px;
+  }
+
+  .main-content .main-note {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}

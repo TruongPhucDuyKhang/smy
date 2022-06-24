@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="main-content">
+        <div class="main-header-title text-center">ログイン</div>
+        <div class="border-min text-center"></div>
+        <p class="main-note text-center">
+          まだアカウントをお持ちでない方は下リンクより 新規登録をお願いします。
+        </p>
+
+        <form action="">
+          <div class="main-input-group flex flex-col">
+            <div class="input-group text-center">
+              <input
+                type="text"
+                class="form-control rounded"
+                placeholder="メールアドレス"
+              />
+            </div>
+
+            <div
+              class="main-password input-group text-center flex align-items-center"
+            >
+              <input
+                type="password"
+                class="form-control rounded password"
+                placeholder="パスワード"
+              />
+              <div class="password-container">
+                <a href="#" class="btn-eye">
+                  <div class="show-password">
+                    <i class="fa-solid fa-eye"></i>
+                  </div>
+                  <div class="hide-password">
+                    <i class="fa-solid fa-eye-slash"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="forgot-password">
+              <p>パスワードを忘れましたか?</p>
+            </a>
+            <div class="text-center">
+              <button type="submit" class="btn btn-submit rounded">
+                ログインする
+              </button>
+            </div>
+            <a href="#" class="regist-col">
+              <p>アカウントをお持ちでない場合は、新しいア</p>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- ./row -->
+
+    <!-- border-full -->
+    <div class="border-full"></div>
+
+    <div class="row">
+      <!-- main-footer -->
+      <div class="main-footer">
+        <h1 class="main-footer-header">もしくはお持ちのSNSでログイン/登録</h1>
+        <div class="main-footer-button flex flex-col">
+          <button type="button" class="btn btn-twitter rounded-full">
+            <div class="icon-common">
+              <i class="fa fa-brands fa-twitter"></i>
+            </div>
+            Twitter
+          </button>
+          <button type="button" class="btn btn-facebook rounded-full">
+            <div class="icon-common">
+              <i class="fa fa-brands fa-facebook-square"></i>
+            </div>
+            Facebook
+          </button>
+          <button type="button" class="btn btn-google rounded-full">
+            <img class="icon-google" src="images/google.svg" alt="google" />
+            Google
+          </button>
+          <button type="button" class="btn btn-line rounded-full">
+            <div class="icon-common">
+              <i class="fa fa-brands fa-line"></i>
+            </div>
+            LINE
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Scripts -->
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $(".btn-eye").click(function (e) {
+        e.preventDefault();
+        var type = $(".password").attr("type");
+
+        if (type === "password") {
+          $(".password").prop("type", "text");
+          $(".hide-password").show();
+          $(".show-password").hide();
+        } else if (type === "text") {
+          $(".password").prop("type", "password");
+          $(".hide-password").hide();
+          $(".show-password").show();
+        }
+      });
+    });
+  </script>
+</html>
