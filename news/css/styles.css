@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.row {
+  padding: 0px 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* Border line */
+.border-min {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #fff;
+  width: 60px;
+  margin: 0 auto;
+}
+
+/* Page - index.html */
+.wrapper .heading {
+  margin: 84px 0 26px 0;
+}
+
+.wrapper .heading h1 {
+  font-weight: bold;
+  font-size: 120px;
+  font-family: "Bebas Neue", cursive;
+}
+
+/* section article */
+.section-article .container:last-child::after {
+  display: none;
+}
+
+.section-article .container {
+  position: relative;
+}
+
+.section-article .container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid #707070;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.section-article .container:first-child {
+  padding-top: 55px;
+}
+
+.section-article .container:first-child,
+.section-article .container {
+  padding-bottom: 55px;
+  gap: 20px;
+}
+
+.section-article .container .background {
+  width: 2300px;
+  border: 1px solid #fff;
+  background-color: #2e2d2d;
+  transition: transform 0.2s ease;
+}
+
+.section-article .container .background:hover {
+  transform: scale(1.01);
+}
+
+.section-article .container .background a img {
+  min-width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.section-article .container .background a img:hover,
+.section-article .container .body a h2.title:hover {
+  opacity: 0.9;
+}
+
+.section-article .container .body a h2.title {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+}
+
+.section-article .container .body .date {
+  font-family: "Bebas Neue", cursive;
+}
+
+.section-article .container .body {
+  gap: 5px;
+}
+
+.section-article .container .body .date {
+  gap: 5px;
+}
+
+.paginate {
+  gap: 10px;
+  margin-bottom: 57px;
+}
+
+.paginate ul {
+  padding: 0;
+  list-style: none;
+}
+
+.paginate ul li a,
+.paginate span {
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.paginate ul > li + li::before {
+  content: "-";
+  color: #fff;
+  margin: 0 5px;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  bottom: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 749px) {
+  .section-article .container {
+    flex-direction: column;
+  }
+
+  .section-article .container .background,
+  .section-article .container .background a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* End - Page - index.html */
