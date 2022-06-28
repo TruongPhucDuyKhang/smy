@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.row {
+  margin: 0px 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Border line */
+.border-min {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #fff;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.border-full {
+  width: 100%;
+  border-bottom: 1px solid #acacac;
+}
+
+.wrapper .heading {
+  font-size: 46px;
+  font-weight: bold;
+  margin: 84px 0 26px 0;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .heading span i {
+  margin-right: 30px;
+}
+
+.container .body {
+  width: 95%;
+  padding: 20px 0;
+  font-family: "Bebas Neue", cursive;
+}
+
+.container .location {
+  position: relative;
+}
+
+.container .location i {
+  position: absolute;
+  right: 0;
+  bottom: 22px;
+}
+
+.container .body .title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.container .body .default,
+.container .body .shipping-address,
+.container .location i {
+  color: #d66262;
+}
+
+.container .body span {
+  margin-right: 10px;
+}
+
+.container .body .address {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/* button-footer */
+.button-footer {
+  margin: 20px 0;
+  position: relative;
+}
+
+.button-footer button .icon-add i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+  
+@media (min-width: 320px) and (max-width: 650px) {
+  .row {
+    margin: 0 15px;
+  }
+
+  .wrapper .heading {
+    font-size: 43px;
+  }
+
+  .wrapper .heading span i {
+    margin-right: 15px; 
+  }
+}
