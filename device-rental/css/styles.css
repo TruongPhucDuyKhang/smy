@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.row {
+  margin: 0px 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+/* Border line */
+.border-min {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #fff;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.border-full {
+  width: 100%;
+  margin: 0 -100px;
+  padding: 20px 100px;
+  border-bottom: 1px solid #acacac;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+/* btn */
+.btn {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 9999px;
+  background-color: transparent;
+}
+
+.btn-primary {
+  background-color: #00b9b2;
+}
+
+/* wrapper */
+.wrapper {
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .heading {
+  margin: 84px 0 26px 0;
+}
+
+.wrapper .heading h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.wrapper .content {
+  padding: 40px 0;
+}
+
+.wrapper .search-device {
+  background-color: #2e2e2e;
+  height: 150px;
+  width: 100%;
+  margin: 0 -100px;
+  padding: 100px;
+}
+
+.wrapper .search-device h3.header-search-device {
+  font-size: 33px;
+  margin-bottom: 13px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .search-device .footer-search-device .button-search,
+.wrapper .search-device .footer-search-device {
+  position: relative;
+}
+
+.wrapper .search-device .footer-search-device .button-search button {
+  position: absolute;
+  right: 0;
+  border-style: none;
+  margin-top: 15px;
+  background-color: transparent;
+}
+
+/* form-control */
+.form-control {
+  height: 60px;
+  width: calc(100% - 70px);
+  position: absolute;
+  right: 0;
+  left: -17px;
+  font-size: 17px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #696969;
+  padding-left: 30px;
+  padding-right: 70px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #515151;
+  box-shadow: 0 0 0 0.1rem rgb(73 64 64);
+}
+
+/* section-article-rectangle */
+.section-article-rectangle .container {
+  margin-bottom: 50px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.section-article-rectangle .container .title {
+  margin-top: 60px;
+}
+
+.section-article-rectangle .container .title h2 {
+  font-size: 46px;
+}
+
+.section-article-rectangle .container .body .images {
+  height: 100%;
+  margin: 0 -100px;
+}
+
+.section-article-rectangle .container .body .images img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.section-article-rectangle .container .title-body h3 {
+  font-size: 33px;
+  margin-bottom: 30px;
+}
+
+.section-article-rectangle .container .content p {
+  font-size: 16px;
+}
+
+.section-article-rectangle .container .btn-footer-section button {
+  gap: 15px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.section-article-rectangle .container .btn-footer-section button .month {
+  font-size: 22px;
+}
+
+.section-article-rectangle .container .btn-footer-section button .price {
+  font-size: 85px;
+}
+
+.section-article-rectangle .container .btn-footer-section button .type {
+  font-size: 37px;
+}
+
+/* device footer */
+.device-footer .device-body {
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 -100px;
+}
+
+.device-footer .header {
+  margin: 30px 0;
+}
+
+.device-footer .header h2 {
+  font-size: 46px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.device-footer .device-body .bg-device {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #505050;
+}
+
+@media (min-width: 320px) and (max-width: 749px) {
+  .row {
+    margin: 0px 15px;
+  }
+
+  .wrapper .heading h1 {
+    font-size: 35px;
+  }
+
+  .wrapper .search-device,
+  .border-full {
+    margin: 0 -15px;
+    padding: 15px;
+  }
+
+  .wrapper .search-device .footer-search-device {
+    margin: 0 15px;
+  }
+
+  .section-article-rectangle .container .body .images {
+    margin: 0 -15px;
+  }
+
+  .section-article-rectangle .container .btn-footer-section button .price {
+    font-size: 45px;
+  }
+
+  .section-article-rectangle .container .title-body h3 {
+    font-size: 30px;
+  }
+
+  .device-footer .device-body {
+    margin: 0 -15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section-article-rectangle .container .btn-footer-section button .month {
+    font-size: 15px;
+  }
+}
