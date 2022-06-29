@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.row {
+  margin: 0px 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Border line */
+.border-min {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #fff;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.border-full {
+  width: 100%;
+  border-bottom: 1px solid #acacac;
+}
+
+/* wrapper */
+.wrapper .placed-order {
+  margin: 84px 0 26px 0;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .placed-order h1 {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+/* footer-order */
+.footer-order {
+  margin: 25px 0;
+  gap: 10px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.footer-order .billing-address,
+.footer-order .shipping-address {
+  background-color: #2e2e2e;
+  padding: 15px;
+  border-radius: 0.2rem;
+  line-height: 25px;
+}
+
+.footer-order .billing-address .full-name,
+.footer-order .shipping-address .full-name {
+  font-weight: bold;
+}
+
+.footer-order .billing-address h2,
+.footer-order .shipping-address h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-order .billing-address .payment-status,
+.footer-order .billing-address .address,
+.footer-order .shipping-address .fulfillment-status,
+.footer-order .shipping-address .address {
+  margin-left: 24px;
+}
+
+.footer-order .billing-address .icon,
+.footer-order .shipping-address .icon {
+  color: #d66262;
+  margin-right: 10px;
+}
+
+.footer-order .billing-address .payment-status .status,
+.footer-order .shipping-address .fulfillment-status .status {
+  color: #d66262;
+  margin-right: 10px;
+}
+
+.text-success {
+  color: #00B94E;
+}
+
+/* table */
+.table {
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 320px) {
+  .row {
+    margin: 0 15px;
+  }
+}

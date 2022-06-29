@@ -93,7 +93,7 @@ body {
   height: 150px;
   width: 100%;
   margin: 0 -100px;
-  padding: 100px;
+  padding: 34px 100px 68px 100px;
 }
 
 .wrapper .search-device h3.header-search-device {
@@ -222,7 +222,14 @@ body {
   .wrapper .search-device,
   .border-full {
     margin: 0 -15px;
+  }
+
+  .border-full {
     padding: 15px;
+  }
+
+  .wrapper .search-device {
+    padding: 34px 15px 68px 15px;
   }
 
   .wrapper .search-device .footer-search-device {

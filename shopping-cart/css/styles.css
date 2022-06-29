@@ -12,6 +12,10 @@ body {
   color: #fff;
 }
 
+.row {
+  margin: 0 40px;
+}
+
 .flex {
   display: flex;
 }
@@ -42,8 +46,10 @@ body {
 }
 
 .border-full {
-  border-bottom: 1px solid #fff;
   width: 100%;
+  margin: 0 -40px;
+  padding: 40px;
+  border-bottom: 1px solid #acacac;
 }
 
 .rounded {
@@ -60,7 +66,14 @@ body {
 }
 
 .btn-shadow {
+  height: 100px;
+  color: #fff;
+  font-size: 33px;
+  font-family: "Bebas Neue", cursive;
+  cursor: pointer;
+  border: 1px solid #fff;
   padding: 10px 37px;
+  background-color: transparent;
 }
 
 .dropdown-toggle {
@@ -68,21 +81,21 @@ body {
 }
 
 .btn {
-  background-color: transparent;
+  width: 100%;
+  height: 100px;
   color: #fff;
   font-size: 33px;
   font-family: "Bebas Neue", cursive;
   cursor: pointer;
   border: 1px solid #fff;
+  background-color: transparent;
 }
 
 .btn-secondary {
-  padding: 15px 101px;
   background-color: #2e2e2e;
 }
 
 .btn-success {
-  padding: 27px 170px;
   background-color: #00b94e;
 }
 
@@ -92,36 +105,37 @@ body {
 }
 
 /* breadcrumb */
-.breadcrumb li {
-  align-items: flex-end;
+.breadcrumb {
+  font-size: 18px;
 }
 
-.breadcrumb li:first-child {
+.breadcrumb .breadcrumb-separator span:last-child a::after {
+  display: none;
+}
+
+.top a {
   color: #656565;
   font-weight: bold;
   font-size: 18px;
 }
 
-.breadcrumb li {
-  list-style: none;
-  text-transform: uppercase;
-}
-
-.breadcrumb li a {
+.breadcrumb .breadcrumb-separator span a,
+.breadcrumb .breadcrumb-separator span {
   position: relative;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
 }
 
-.breadcrumb li a::after {
+.breadcrumb .breadcrumb-separator span:not(.top):after {
   content: "";
   display: block;
   position: absolute;
   left: 0;
   right: 0;
   border-bottom: 1px solid #fff;
-  font-size: 18px;
 }
 
-.breadcrumb > li + li::before {
+.breadcrumb > span + span::before {
   content: ">";
   color: #656565;
   margin: 0 13px 0 5px;
@@ -141,15 +155,15 @@ body {
   height: 50px;
   overflow: hidden;
   font-size: 16px;
-  margin: 38px 110px 58px 110px;
+  margin: 38px 0 0 0;
 }
 
 /* rental-period */
 .rental-period .title-first {
   font-family: "Bebas Neue", cursive;
-  font-size: 33;
+  font-size: 33px;
   font-weight: bold;
-  margin: 51px 275px 28px 275px;
+  margin: 50px 0 28px 0;
 }
 
 .rental-period .title-child {
@@ -160,8 +174,11 @@ body {
 }
 
 .rental-period .date-main {
-  background-color: #696969;
+  width: 100%;
   height: 100px;
+  margin: 0 -40px;
+  padding: 0 40px;
+  background-color: #696969;
 }
 
 .rental-period .date-main span {
@@ -184,9 +201,18 @@ body {
   margin: 31px 0px 30px 0px;
 }
 
-/* shopping-cart-body */
-.shopping-cart-body {
-  margin: 0px 40px 36px 40px;
+.shopping-cart-body .item-divider {
+  background: url(../images/bg_divider.png) repeat-x 7px;
+  width: 100%;
+  filter: saturate(100%) contrast(100%) brightness(100%) invert(100%)
+    sepia(100%) grayscale(100%);
+  height: 1px;
+  margin-bottom: 60px;
+}
+
+.shopping-cart-body .body-shop .bg-background img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .shopping-cart-body .body-shop .title {
@@ -204,15 +230,8 @@ body {
   font-family: "Bebas Neue", cursive;
 }
 
-.shopping-cart-body .body-shop .type-price {
-  margin: 0px 15px 0px 16px;
-}
-
-.shopping-cart-body .body-shop .month {
-  margin-right: 39px;
-}
-
 .shopping-cart-body .body-shop .detail {
+  gap: 15px;
   align-items: baseline;
   font-size: 38px;
   font-weight: bold;
@@ -220,11 +239,10 @@ body {
 }
 
 .shopping-cart-body .body-shop .detail2 {
+  gap: 114px;
   margin: 36px 0px 62px 0px;
-}
-
-.shopping-cart-body .body-shop .detail2 .select-option {
-  margin-right: 130px;
+  display: flex;
+  align-items: stretch;
 }
 
 select {
@@ -235,8 +253,8 @@ select {
   background-position-x: 150px;
 }
 
-.shopping-cart-body .body-shop .detail-footer {
-  margin: 61px 0px 70px 0px;
+.shopping-cart-body .detail-footer {
+  width: 100%;
 }
 
 /* minimum-rental-period */
@@ -254,7 +272,6 @@ select {
 }
 
 .minimum-rental-period p {
-  margin: 0px 40px;
   font-size: 16px;
   font-family: "Bebas Neue", cursive;
 }
@@ -263,11 +280,12 @@ select {
   width: 100%;
   height: 300px;
   background-color: #696969;
-  margin: 62px 0px 52px 0px;
+  margin: 62px -40px;
+  padding: 40px;
 }
 
 .minimum-rental-period .button-order {
-  margin: 70px 0px;
+  margin: 70px 0 0 0;
 }
 
 .minimum-rental-period .total-order .detail-total-order {
@@ -294,15 +312,125 @@ select {
 }
 
 .question-order {
-  margin: 70px 110px;
+  margin: 70px 0;
   font-family: "Bebas Neue", cursive;
 }
 
 .question-order .question-title,
 .question-order .question-content p {
-   margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .question-order .question-content .question-content-title {
   margin-bottom: 15px;
+}
+
+/* Quantity input */
+.cart-plus-minus {
+  border: 1px solid #fff;
+}
+
+.cart-plus-minus .dropcart-plus-minus-box {
+  height: 70px;
+  width: 40px;
+  border-style: none;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  opacity: 0.85;
+  outline: none;
+  padding: 0 0.5rem;
+}
+
+.cart-plus-minus .qtybutton {
+  width: calc(4.5rem / 1);
+  height: 100px;
+  display: flex;
+  flex: auto 0 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  border: 0;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 749px) {
+  .row {
+    margin: 0px 15px;
+  }
+
+  .border-full,
+  .rental-period .date-main,
+  .minimum-rental-period .total-order {
+    margin: 62px -15px;
+    padding: 0 15px;
+  }
+
+  .btn {
+    font-size: 29px;
+  }
+
+  .minimum-rental-period .button-order {
+    margin-bottom: 40px;
+  }
+
+  .minimum-rental-period .title {
+    font-size: 22px;
+    padding-top: 0;
+  }
+
+  .shopping-cart h1 {
+    font-size: 32px;
+  }
+
+  .rental-period .title-child {
+    padding-bottom: 0;
+  }
+
+  .shopping-cart .content p {
+    margin-bottom: -50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 580px) {
+  .minimum-rental-period .total-order .detail-total-order .price {
+    font-size: 80px;
+  }
+
+  .minimum-rental-period .total-order .detail-total-order {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 556px) {
+  .shopping-cart-body .body-shop .detail2 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .cart-plus-minus .dropcart-plus-minus-box {
+    height: 100px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 493px) {
+  .shopping-cart-body .body-shop .detail {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 339px) {
+  .btn-secondary {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 398px) {
+  .rental-period .note {
+    font-size: 19px;
+  }
 }
